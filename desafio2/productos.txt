@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 [{"Nombre":"Harina","Marca":"Molino","id":1},{"Nombre":"Harina","Marca":"Molino","id":2},{"Nombre":"Harina","Marca":"Molino","id":3},{"Nombre":"Harina","Marca":"Molino","id":4},{"Nombre":"Harina","Marca":"Molino","id":5},{"Nombre":"Harina","Marca":"Molino","id":6},{"Nombre":"Harina","Marca":"Molino","id":7},{"Nombre":"Harina","Marca":"Molino","id":8}]
+=======
+[{"Nombre":"Harina","Marca":"Molino","id":1},{"Nombre":"Harina","Marca":"Molino","id":2},{"Nombre":"Harina","Marca":"Molino","id":3},{"Nombre":"Harina","Marca":"Molino","id":4}]
+>>>>>>> 3c1c7d8d059f0abf4a42728503bf8f90b7f3d617
