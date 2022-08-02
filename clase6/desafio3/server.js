@@ -1,31 +1,15 @@
 const express =require('express');
 const app=express();
 const Contenedor =require('./Contenedor.js');
-
-async function verproductos(){
-    const product = new Contenedor(`./productos.txt`);
-    return await product.getAll();
-}
+const product = new Contenedor(`./productos.txt`)
 app.get('/productos',async (req,res)=>{
-    res.send(await verproductos());
+    const item =await product.getAll()
+    res.send(item);
 });
-async function Random(){
-    const rand =verproductos();
-    const randlength= parseInt.rand;
-     const alazar = math.Random(randlength);
-    const byId= nuevo.getbyId(randomNumber);
-    let randomNumber = Math.ceil(Math.random() * randlength);
-      console.log(randomNumber)
-  return await randomNumber;
-}
-
-
-
-
 app.get('/productoRandom',async (req,res)=>{
-    res.send(await randomNumber());
+    const items = await product.getAll();
+    const randomCheto = items[Math.floor(items.length*Math.random())]
+    res.send(randomCheto);// buen nombre le mando 
 });
 
-const server =app.listen(8080, ()=>{
-    console.log(`esta esuchando correctamente ${server.address().port}`)
-})
+
